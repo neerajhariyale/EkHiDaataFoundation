@@ -89,7 +89,7 @@ const Teams = () => {
               <p className="text-center text-md text-gray-700 font-semibold">
                 {item.position}
               </p>
-              <p className="text-center text-sm mt-2">{item.desc}</p>
+              <p className="text-center text-gray-500  text-sm mt-2">{item.desc}</p>
               <div className="flex justify-center mt-3">
                 <a href={item.social} target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
@@ -119,7 +119,7 @@ const Teams = () => {
               <p className="text-center text-md text-gray-700 font-semibold">
                 {item.position}
               </p>
-              <p className="text-center text-sm mt-2">{item.desc}</p>
+              <p className="text-center text-gray-500 text-sm mt-2">{item.desc}</p>
               <div className="flex justify-center mt-3">
                 <a href={item.social} target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
