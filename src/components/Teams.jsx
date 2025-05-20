@@ -10,6 +10,7 @@ import rohit from "../assets/teamPhoto/Rohit.jpg";
 import pari from "../assets/teamPhoto/Pari.jpg";
 
 const Teams = () => {
+  // Founder and Cofounder Data
   const founderData = [
     {
       name: "Birbal Suthar",
@@ -27,7 +28,7 @@ const Teams = () => {
       desc: "Co-Founder of Ek Hi Daata Foundation, dedicated to creating impactful change through compassion, education, and community empowerment for a better tomorrow.",
     },
   ];
-
+  // Member Data
   const memberData = [
     {
       name: "Rohit Atude",
