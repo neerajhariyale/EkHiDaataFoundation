@@ -11,19 +11,20 @@ import pari from "../assets/teamPhoto/Pari.jpg";
 
 const Teams = () => {
   const founderData = [
-    { 
+    {
       name: "Birbal Suthar",
       position: "Founder",
       src: birbal,
-      social: "https://www.instagram.com/adwith_._09?utm_source=qr&igsh=bTVubjM0Y3NwbGY4",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      social:
+        "https://www.instagram.com/adwith_._09?utm_source=qr&igsh=bTVubjM0Y3NwbGY4",
+      desc: "Founded by visionary minds, Ek Hi Daata Foundation began with a mission to serve humanity, spread kindness, and uplift the underprivileged across communities.",
     },
     {
       name: "Dhyanendra Singh Patel",
       position: "Co-Founder",
       src: dsp,
       social: "https://www.instagram.com/_dsp_11?igsh=YTNtcXFxemhuMTM4",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      desc: "Co-Founder of Ek Hi Daata Foundation, dedicated to creating impactful change through compassion, education, and community empowerment for a better tomorrow.",
     },
   ];
 
@@ -33,35 +34,36 @@ const Teams = () => {
       position: "Secretary",
       src: rohit,
       social: "https://www.instagram.com/rohitxlx?igsh=MWRwMDN1aXZ0aDJpeA==",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      desc: "Dedicated and passionate, our Secretary ensures smooth operations, coordinates initiatives, and strengthens community outreach to help us serve humanity more effectively every day.",
     },
     {
       name: "Aniket thakur",
       position: "Joint Secretary",
       src: aniket,
       social: "https://www.instagram.com/akki_b8?igsh=YnNxMmNhbzdseDdn",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      desc: "Leading with purpose, the Joint Secretary supports outreach, coordinates volunteers, and strengthens community impact through dedicated social responsibility efforts.",
     },
     {
       name: "Poonam Uike",
       position: "Organization Secretary",
       src: poonam,
       social: "https://www.instagram.com/_punamm_11?igsh=dGt0ODNzZGU4azU4",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      desc: "Dedicated leader ensuring transparency, coordination, and smooth operations to uplift lives through collective efforts.",
     },
     {
       name: "Mohit kanchole",
       position: "Treasurer",
       src: mohit,
-      social: "https://www.instagram.com/mohit_kanchole07?igsh=c3lvY21zYzNid3M1",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      social:
+        "https://www.instagram.com/mohit_kanchole07?igsh=c3lvY21zYzNid3M1",
+      desc: "Manages all donations, keeps records, ensures funds are used properly to support our foundation’s mission.",
     },
     {
       name: "Juhi chandel",
       position: "Member",
       src: pari,
       social: "https://www.instagram.com/__juhi_x1?igsh=bWg4Y2Z2MnphOHQ4",
-      desc: "At our core, we believe that all blessings, support, and kindness flow from the Almighty, and we are simply the humble channels of His divine generosity",
+      desc: "An Ek Hi Daata Foundation  is caring, kind, and dedicated to helping others with honesty, compassion, and teamwork.",
     },
   ];
 
@@ -88,11 +90,7 @@ const Teams = () => {
               </p>
               <p className="text-center text-sm mt-2">{item.desc}</p>
               <div className="flex justify-center mt-3">
-                <a
-                  href={item.social}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={item.social} target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
                 </a>
               </div>
@@ -122,11 +120,7 @@ const Teams = () => {
               </p>
               <p className="text-center text-sm mt-2">{item.desc}</p>
               <div className="flex justify-center mt-3">
-                <a
-                  href={item.social}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={item.social} target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-2xl text-red-500 hover:text-red-800 transition duration-200" />
                 </a>
               </div>

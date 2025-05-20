@@ -21,12 +21,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .send(
-        "service_zuzctqy",
-        "template_m9gu1yj",
-        form,
-        "KuoXI0AQy7G8kaXvX"
-      )
+      .send("service_zuzctqy", "template_m9gu1yj", form, "KuoXI0AQy7G8kaXvX")
       .then(() => {
         toast.dismiss();
         toast.success("Message sent successfully ✅");
@@ -41,8 +36,9 @@ const ContactUs = () => {
 
   return (
     <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly">
+      {/* Toaster */}
       <ToastContainer position="top-right" autoClose={3000} />
-      
+
       {/* Heading */}
       <div className="flex flex-col items-center text-center px-4">
         <p className="mt-8 text-2xl md:text-3xl font-semibold">Join Us</p>

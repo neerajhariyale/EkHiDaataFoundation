@@ -66,6 +66,7 @@ const About = () => {
         />
       </div>
 
+      {/* Our Core Activities */}
       <div className="mt-16 w-11/12 flex justify-center items-center mx-auto flex-col">
         <div className="flex flex-col items-center">
           <p className="text-center mt-8  text-3xl">Our Core Activities</p>
@@ -111,6 +112,7 @@ const About = () => {
         </div>
       </div>
 
+      {/* Footer */}
       <div className="mt-18 w-full">
         <Footer />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactPlayer from 'react-player';
+import ReactPlayer from "react-player";
 import video1 from "../assets/workPhotoVideos/video1.mp4";
 import video2 from "../assets/workPhotoVideos/video2.mp4";
 import video3 from "../assets/workPhotoVideos/video3.mp4";
@@ -17,103 +17,66 @@ import image3 from "../assets/workPhotoVideos/image3.jpg";
 import image4 from "../assets/workPhotoVideos/image4.jpg";
 import image5 from "../assets/workPhotoVideos/image5.jpg";
 import image6 from "../assets/workPhotoVideos/image6.jpg";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const Drive = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
+  // Drive Gallery Data
   const galleryData = [
-  {
-    type: "image",
-    url: image1,
-    //title: "Sample Image 1",
-  },
-  {
-    type: "video",
-    url: video1,
-    //title: "Sample Video 1",
-  },
-  {
-    type: "image",
-    url: image5,
-    //title: "Sample Image 2",
-  },
-  // {
-  //   type: "video",
-  //   url: video2,
-  //   //title: "Sample Video 2",
-  // },
-  //   {
-  //   type: "video",
-  //   url: video11,
-  //   //title: "Sample Image 1",
-  // },
-  // {
-  //   type: "video",
-  //   url: video9,
-  //   //title: "Sample Video 1",
-  // },
-  // {
-  //   type: "video",
-  //   url: video5,
-  //   //title: "Sample Image 2",
-  // },
-  // {
-  //   type: "video",
-  //   url: video4,
-  //   //title: "Sample Video 2",
-  // },
-  // {
-  //   type: "image",
-  //   url: image3,
-  //   //title: "Sample Image 1",
-  // },
-  // {
-  //   type: "video",
-  //   url: video7,
-  //   //title: "Sample Video 1",
-  // },
-];
+    {
+      type: "image",
+      url: image1,
+    },
+    {
+      type: "video",
+      url: video1,
+    },
+    {
+      type: "image",
+      url: image5,
+    },
+  ];
 
   return (
     <div>
       <div className="mt-5 w-11/12 h-contain mx-auto flex flex-col items-center justify-evenly">
+        {/* Heading */}
         <div className="flex flex-col items-center">
           <p className="text-center mt-8  text-3xl">Drives</p>
           <div className="w-16 border-2 border-red-500 mt-1"></div>
         </div>
       </div>
 
-       {/* <div className="video-container">
-      <video width="600" controls>
-        <source src={video1} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
-
+      {/* Image and Video Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 p-2 w-10/12 mx-auto mt-5 ">
-      {galleryData.map((item, index) => (
-        <div key={index} className="rounded overflow-hidden shadow-lg object-fit cursor-pointer bg-black transition duration-200">
-          {item.type === "image" ? (
-            <img src={item.url} alt={item.title} className="w-full h-auto " />
-          ) : (
-            <video controls className="w-full h-auto">
-              <source src={item.url} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-          {/* <div className="px-4 py-2">
-            <h2 className="text-md font-semibold">{item.title}</h2>
-          </div> */}
-        </div>
-      ))}
-    </div>
+        {galleryData.map((item, index) => (
+          <div
+            key={index}
+            className="rounded overflow-hidden shadow-lg object-fit cursor-pointer bg-black transition duration-200"
+          >
+            {item.type === "image" ? (
+              <img src={item.url} alt={item.title} className="w-full h-auto " />
+            ) : (
+              <video controls className="w-full h-auto">
+                <source src={item.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </div>
+        ))}
+      </div>
 
-      <div className='flex items-center justify-center mt-4'>
-        <button className='bg-gray-500 rounded-xl h-10 w-32 text-white hover:bg-red-500 cursor-pointer' onClick={() => navigate('/drive')}>View More</button>
+      {/* View More Button */}
+      <div className="flex items-center justify-center mt-4">
+        <button
+          className="bg-gray-500 rounded-xl h-10 w-32 text-white hover:bg-red-500 cursor-pointer"
+          onClick={() => navigate("/drive")}
+        >
+          View More
+        </button>
       </div>
     </div>
-    // </div>
   );
 };
 

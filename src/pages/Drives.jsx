@@ -27,74 +27,61 @@ const Drives = () => {
     {
       type: "image",
       url: image1,
-      //title: "Sample Image 1",
     },
     {
       type: "video",
       url: video1,
-      //title: "Sample Video 1",
     },
     {
       type: "image",
       url: image5,
-      //title: "Sample Image 2",
     },
     {
       type: "video",
       url: video2,
-      //title: "Sample Video 2",
     },
     {
       type: "video",
       url: video11,
-      //title: "Sample Image 1",
     },
     {
       type: "video",
       url: video9,
-      //title: "Sample Video 1",
     },
     {
       type: "video",
       url: video5,
-      //title: "Sample Image 2",
     },
     {
       type: "video",
       url: video4,
-      //title: "Sample Video 2",
     },
     {
       type: "image",
       url: image3,
-      //title: "Sample Image 1",
     },
     {
       type: "video",
       url: video7,
-      //title: "Sample Video 1",
     },
   ];
 
   return (
     <div>
       <div className=" w-11/12  mx-auto flex flex-col items-center justify-evenly">
+        {/* Heading  */}
         <div className="flex flex-col items-center">
           <p className="text-center mt-1  text-3xl">📸 Drive Gallery</p>
           <div className="w-18 border-2 border-red-500 mt-1"></div>
         </div>
       </div>
-      
-      <p className="text-center text-gray-600 mb-5 max-w-2xl mx-auto mt-4">
-          Here’s a glimpse of our on-ground impact — serving food, sharing warmth,
-          and supporting lives with kindness. Watch the mission in action.
-        </p>
-      {/* <div className="video-container">
-      <video width="600" controls>
-        <source src={video1} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
 
+      <p className="text-center text-gray-600 mb-5 max-w-2xl mx-auto mt-4">
+        Here’s a glimpse of our on-ground impact — serving food, sharing warmth,
+        and supporting lives with kindness. Watch the mission in action.
+      </p>
+
+      {/* Image and Video Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 p-2 w-10/12 mx-auto mt-5 mb-5 ">
         {galleryData.map((item, index) => (
           <div
@@ -116,14 +103,35 @@ const Drives = () => {
         ))}
       </div>
 
-      <div className="flex flex-col items-center mt-5"> 
-        <p className="text-lg font-semibold"> Want to contribute to moments like these? <br /> <span className="text-md text-gray-500 font-normal">Join our next drive or support us with a donation.</span></p>
-        <div className='flex justify-center items-center gap-3 mt-2 mb-5'>
-          <button className='bg-gray-500 rounded-full h-10 w-32 text-white hover:bg-gray-800 cursor-pointer' onClick={() => navigate('/joinus')}>Join a drive</button>
-          <button className='bg-red-500 rounded-full h-10 w-32 text-white hover:bg-gray-800 cursor-pointer' onClick={() => navigate('/donate')}>Donate Now</button>
+      <div className="flex flex-col items-center mt-5">
+        <p className="text-lg font-semibold">
+          {" "}
+          Want to contribute to moments like these? <br />{" "}
+          <span className="text-md text-gray-500 font-normal">
+            Join our next drive or support us with a donation.
+          </span>
+        </p>
+
+        <div className="flex justify-center items-center gap-3 mt-2 mb-5">
+          {/* Join Us Button */}
+          <button
+            className="bg-gray-500 rounded-full h-10 w-32 text-white hover:bg-gray-800 cursor-pointer"
+            onClick={() => navigate("/joinus")}
+          >
+            Join a drive
+          </button>
+
+          {/* Donate Button */}
+          <button
+            className="bg-red-500 rounded-full h-10 w-32 text-white hover:bg-gray-800 cursor-pointer"
+            onClick={() => navigate("/donate")}
+          >
+            Donate Now
+          </button>
         </div>
       </div>
 
+      {/* Footer */}
       <div>
         <Footer />
       </div>

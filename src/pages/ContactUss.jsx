@@ -22,13 +22,9 @@ const ContactUss = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Emailjs Details
     emailjs
-      .send(
-        "service_zuzctqy",
-        "template_m9gu1yj",
-        form,
-        "KuoXI0AQy7G8kaXvX"
-      )
+      .send("service_zuzctqy", "template_m9gu1yj", form, "KuoXI0AQy7G8kaXvX")
       .then(() => {
         toast.dismiss();
         toast.success("Message sent successfully ✅");
@@ -43,6 +39,7 @@ const ContactUss = () => {
 
   return (
     <div className="mt-1 w-full h-auto mx-auto flex flex-col items-center justify-evenly px-4 sm:px-6">
+      {/* Toast */}
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* Heading */}

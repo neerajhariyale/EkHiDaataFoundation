@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import banner from '../assets/banner.png';
-import banner1 from '../assets/workPhotoVideos/image3.jpg';
-import banner2 from '../assets/workPhotoVideos/image4.jpg';
-import banner3 from '../assets/workPhotoVideos/image5.jpg';
-import banner4 from '../assets/workPhotoVideos/image6.jpg';
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
+import React, { useEffect, useState } from "react";
+import banner from "../assets/banner.png";
+import banner1 from "../assets/workPhotoVideos/image3.jpg";
+import banner2 from "../assets/workPhotoVideos/image4.jpg";
+import banner3 from "../assets/workPhotoVideos/image5.jpg";
+import banner4 from "../assets/workPhotoVideos/image6.jpg";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Coursel = () => {
+  // Image data
   const images = [
     { src: banner },
     { src: banner1 },
@@ -17,12 +18,14 @@ const Coursel = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //  Previous Slide
   const prevSlide = () => {
-    setCurrentIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
+  // Next Slide
   const nextSlide = () => {
-    setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   // Auto slide every 2 seconds
@@ -31,8 +34,8 @@ const Coursel = () => {
       nextSlide();
     }, 2000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [currentIndex]); // 🧠 useEffect will re-run every time currentIndex changes
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className="relative w-full h-[600px] mx-auto overflow-hidden bg-black">
@@ -62,7 +65,7 @@ const Coursel = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-white' : 'bg-gray-400'
+              currentIndex === index ? "bg-white" : "bg-gray-400"
             }`}
           ></button>
         ))}
