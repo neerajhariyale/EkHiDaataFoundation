@@ -61,7 +61,7 @@ const ContactUs = () => {
       <div className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-4/12 mt-5 p-6 bg-white border-2 border-gray-300 shadow-xl rounded-xl">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="text-sm font-medium">Name</label>
+            <label className="text-sm font-medium ">Name</label>
             <input
               type="text"
               name="name"

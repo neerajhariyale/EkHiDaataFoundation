@@ -19,8 +19,8 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full shadow-md bg-white ">
-      <div className="flex justify-between items-center px-4 py-3 md:px-10 max-w-screen-xl mx-auto">
+    <div className="w-full shadow-md  ">
+      <div className="flex justify-between border-none items-center px-4 py-3 md:px-10 max-w-screen-xl mx-auto">
 
         {/* Logo */}
         <div>
