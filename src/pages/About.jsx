@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <div className="   w-full   mx-auto  ">
-      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800 ">
+      <h1 className="text-3xl md:text-4xl mt-5 font-semibold text-center mb-8 text-gray-800 ">
         "EK HI DAATA –{" "}
         <span className="font-semibold italic text-red-500">
           The Only One Giver"

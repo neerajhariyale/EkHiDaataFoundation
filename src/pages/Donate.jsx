@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Donate = () => {
   return (
-    <div className="w-full min-h-screen  flex flex-col justify-center items-center ">
+    <div className="w-full min-h-screen mt-5  flex flex-col justify-center items-center ">
       {/* Quote Section */}
       <h1 className="text-2xl sm:text-4xl font-semibold text-center   mb-4">
         "Your small help can{" "}

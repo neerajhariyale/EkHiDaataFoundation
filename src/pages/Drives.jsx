@@ -68,7 +68,7 @@ const Drives = () => {
 
   return (
     <div>
-      <div className=" w-11/12  mx-auto flex flex-col items-center justify-evenly">
+      <div className=" w-11/12 mt-5 mx-auto flex flex-col items-center justify-evenly">
         {/* Heading  */}
         <div className="flex flex-col items-center">
           <p className="text-center mt-1  text-3xl">📸 Drive Gallery</p>
