@@ -59,6 +59,14 @@ const Header = () => {
           </button>
         </div>
 
+
+
+        {/* Mobile View Tag Line AND Name */}
+        <div className="md:hidden flex flex-col items-center p-1">
+          <h1 className="text-lg font-semibold text-black">Ek Hi Daata Foundation</h1>
+          <p className="text-[10px] text-gray-500 italic">"HELPING HANDS, UNITED BY FAITH"</p>
+        </div>
+
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
