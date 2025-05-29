@@ -11,6 +11,13 @@ import video8 from "../assets/workPhotoVideos/video8.mp4";
 import video9 from "../assets/workPhotoVideos/video9.mp4";
 import video10 from "../assets/workPhotoVideos/video10.mp4";
 import video11 from "../assets/workPhotoVideos/video11.mp4";
+import video12 from "../assets/workPhotoVideos/video12.mp4";
+import video13 from "../assets/workPhotoVideos/video13.mp4";
+import video14 from "../assets/workPhotoVideos/video14.mp4";
+import video15 from "../assets/workPhotoVideos/video15.mp4";
+import video16 from "../assets/workPhotoVideos/video16.mp4";
+import video17 from "../assets/workPhotoVideos/video17.mp4";
+
 import image1 from "../assets/workPhotoVideos/image1.jpg";
 import image2 from "../assets/workPhotoVideos/image2.jpg";
 import image3 from "../assets/workPhotoVideos/image3.jpg";
@@ -24,6 +31,30 @@ const Drives = () => {
   const navigate = useNavigate();
 
   const galleryData = [
+    {
+      type: "video",
+      url: video12,
+    },
+    {
+      type: "video",
+      url: video13,
+    },
+    {
+      type: "video",
+      url: video14,
+    },
+    {
+      type: "video",
+      url: video15,
+    },
+    {
+      type: "video",
+      url: video16,
+    },
+    {
+      type: "video",
+      url: video17,
+    },
     {
       type: "image",
       url: image1,
