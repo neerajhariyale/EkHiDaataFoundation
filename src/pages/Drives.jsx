@@ -37,11 +37,11 @@ const Drives = () => {
     },
     {
       type: "video",
-      url: video13,
+      url: video16,
     },
     {
       type: "video",
-      url: video14,
+      url: video17,
     },
     {
       type: "video",
@@ -49,11 +49,11 @@ const Drives = () => {
     },
     {
       type: "video",
-      url: video16,
+      url: video14,
     },
     {
       type: "video",
-      url: video17,
+      url: video13,
     },
     {
       type: "image",
