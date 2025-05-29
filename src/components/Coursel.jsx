@@ -4,16 +4,19 @@ import banner1 from "../assets/workPhotoVideos/image3.jpg";
 import banner2 from "../assets/workPhotoVideos/image4.jpg";
 import banner3 from "../assets/workPhotoVideos/image5.jpg";
 import banner4 from "../assets/workPhotoVideos/image6.jpg";
+import banner5 from "../assets/workPhotoVideos/image7.jpg";
+
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Coursel = () => {
   // Image data
   const images = [
     { src: banner },
-    { src: banner1 },
+    { src: banner5 },
     { src: banner2 },
     { src: banner3 },
     { src: banner4 },
+    { src: banner1 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
