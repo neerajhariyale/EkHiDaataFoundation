@@ -7,18 +7,7 @@ const Footer = () => {
       {/* Copyrtight Section */}
       <p className='font-semibold'>&copy; 2025 Ekhidaata Foundation. All rights reserved.</p>
 
-      {/* Developed Section */}
-      <p>
-        Developed with <span role="img" aria-label="love">❤️</span> by{" "}
-        <a 
-          href="https://www.neerajhariyale.tech" 
-          target='_blank' 
-          rel='noopener noreferrer' 
-          className='cursor-pointer hover:text-gray-900 '
-        >
-          Neeraj Hariyale
-        </a>
-      </p>
+    
     </div>
   )
 }
