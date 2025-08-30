@@ -2,7 +2,6 @@ import React from "react";
 import neeraj from "../assets/teamPhoto/neeraj.png";
 import { FaInstagram } from "react-icons/fa6";
 import birbal from "../assets/teamPhoto/Birbal.jpg";
-import dsp from "../assets/teamPhoto/DSP.jpg";
 import aniket from "../assets/teamPhoto/Aniket.jpg";
 import mohit from "../assets/teamPhoto/Mohit.jpg";
 import poonam from "../assets/teamPhoto/Poonam.jpg";
