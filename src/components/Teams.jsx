@@ -70,7 +70,7 @@ const Teams = () => {
   return (
     <div className="px-4">
       {/* Founder Cards */}
-      <div>
+      <div className="mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center mt-5 w-full  mx-auto">
           {founderData.map((item, index) => (
             <div
