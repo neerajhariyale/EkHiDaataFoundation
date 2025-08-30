@@ -26,7 +26,7 @@ const Teams = () => {
   //     social: "",
   //     desc: "Co-Founder of Ek Hi Daata Foundation, dedicated to creating impactful change through compassion, education, and community empowerment for a better tomorrow.",
   //   },
-  // ];
+  ];
   // Member Data
   const memberData = [
     {
