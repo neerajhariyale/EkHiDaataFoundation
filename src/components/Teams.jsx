@@ -20,14 +20,14 @@ const Teams = () => {
         "https://www.instagram.com/adwith_._09?utm_source=qr&igsh=bTVubjM0Y3NwbGY4",
       desc: "Founded by visionary minds, Ek Hi Daata Foundation began with a mission to serve humanity, spread kindness, and uplift the underprivileged across communities.",
     },
-    {
-      name: "Dhyanendra Singh Patel",
-      position: "Co-Founder",
-      src: dsp,
-      social: "https://www.instagram.com/_dsp_11?igsh=YTNtcXFxemhuMTM4",
-      desc: "Co-Founder of Ek Hi Daata Foundation, dedicated to creating impactful change through compassion, education, and community empowerment for a better tomorrow.",
-    },
-  ];
+  //   {
+  //     name: "",
+  //     position: "Co-Founder",
+  //     src: ,
+  //     social: "",
+  //     desc: "Co-Founder of Ek Hi Daata Foundation, dedicated to creating impactful change through compassion, education, and community empowerment for a better tomorrow.",
+  //   },
+  // ];
   // Member Data
   const memberData = [
     {
